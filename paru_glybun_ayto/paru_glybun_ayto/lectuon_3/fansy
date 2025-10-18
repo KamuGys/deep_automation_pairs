@@ -1,0 +1,4 @@
+import rich
+
+print('[bold blue]Helo Wowa[/bold blue]')
+rich.print('[bold magenta]Helo Wowa[/bold magenta]')
