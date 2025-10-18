@@ -1,0 +1,57 @@
+# Типы данных:
+a: int = 8
+b: str = "hi"
+c: float = 2.3 #/.3 4.
+d: bool = False
+e: int|None = None
+f: str|None = None #not option
+
+#вспомогательные типы данных
+#a: Elipsis = 
+b: complex = complex(real = 3, imag =- 2)
+c: list = [a,c,3,4,5] #
+d:tuple = (1,2,b,f,5,1,2,b,f,5,1,2,b,f,5,1,2,b,f,5,1,2,b,f,5,1,2,b,f,5) #картеж
+e: set = {1,2,3,4,5}
+f: dict = {
+            1: "11",
+            2:'22',
+            3:"33",
+            4: "44",
+            'boob': 'durak'
+}
+g: set = {'bob', "hello", 'you', 'are', 'howe', 'bob'}
+
+for i in range(1):
+    ...
+def a()-> int: ...
+print(a,b,c,c[26:0:-1],c[::-1],d[0:46:3],d[13:],d[4-8],e,f,sep="\n",)
+print(g)
+print(f[2], f['boob'])
+print(tuple(f['boob'])), list(f[2])
+
+
+a: list =[1,13,90,5,2]
+b: tuple =(3,4)
+c: set={"set", 'how', 'are', 'eou'}
+d: dict = {"da": 'no', 'no': 'yes', "da": 'no1'}
+
+print(d)
+a[-1]=11
+a[0]=89
+#лист менять можно а тапл нет
+print(a)
+
+hello: str = "ilya"
+for i in range(1,6,2):
+    print (f"Hello {hello =}!, how are you")
+    print(i)
+    print(list(range(1, 101)))
+    print()
+my_range: range = (0,10)
+print(my_range) 
+
+sentanse: str = "hello, boob, how are you"
+splitted_sentense: list[str]= sentanse.split('!')
+for part in sp:
+...
+print(plitted_sentens)

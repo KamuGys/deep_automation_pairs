@@ -1,0 +1,86 @@
+'''
+print ("hi")
+
+a=10
+i=0
+
+while a>i :
+    i +=1
+    print ('hot hello', i)
+#
+
+b=1
+is_ready_to_exit = False
+while not is_ready_to_exit:
+    if b>=1:
+        print('exited')
+        b = b-18
+        continue
+    print('switch')
+    if 18>1:
+        break
+    
+
+while True:
+    user_input = input("?:")
+    print(user_input) 
+'''
+    
+    
+#регион от [-1000 до 1000] пользователь какое-то число целое загадал, задача программу замучать пользователя вопросами в виде: 
+#взять середину региона и спросить больше или меньше заданного числа выбранного числа и так в цикле делить региона по полам, сужая область поиска, пока не найдём нужное число
+'''
+user_number = int(input("Загадай любое число от -1000 до 1000:"))
+#while True:
+user_otvet = input('Ваше число больше, меньше или равно 0?')
+if user_otvet.lower == "меньше":
+    user_otvet = input ('Ваше число меньше -500?')
+    if user_otvet == "да":
+        user_otvet = input ('Ваше число меьше -750?')
+        if user_otvet == "да":
+            user_otvet = input ('Ваше число меьше -875?')
+        elif user_otvet == "нет":
+            user_otvet = input ('Ваше число меьше -875?')
+        else:
+            print('Ответ введён не корректно, попробуйте ещё раз')
+            
+    elif user_otvet == "нет":
+        user_otvet = input ('Ваше число меньше 250?')
+    else:
+        print('Ответ введён не корректно, попробуйте ещё раз')
+elif user_otvet.lower == "равен":
+    print("Ваше загаданное число 0")
+elif user_otvet.lower == "равно":
+    print("Ваше загаданное число 0")
+elif user_otvet.lower == input("ваше число больше 500"):
+        if user_otvet == "да":
+            user_otvet.lower == input("ваше число больше 750")
+            if user_otvet == "да":
+                user_otvet.lower == input("ваше число больше 875")
+            elif user_otvet == "нет":
+                user_otvet.lower == input("больше 750")
+        elif user_otvet == "нет":
+            user_otvet.lower == input("меньше 250")
+        else:
+            print('Ответ введён не корректно, попробуйте ещё раз')
+else:
+    print('Ответ введён не корректно, попробуйте ещё раз')
+        
+''' 
+        
+user_number = int(input("Загадайте число"))     
+mun_numbers = -1000
+max_numbers = 1000
+while mun_numbers <= max_numbers:
+    ser = (mun_numbers + max_numbers)// 2
+    user_otvet = input("ваше число" + ser + "?")
+    # user_otvet = input("если ваше число число больше этого, поставьте +, если меньше, то -:")
+    while user_otvet.lower == "да":
+        print('Ваше число 0')
+        break
+    while user_otvet.lower == "нет":
+        ser = ser // 2
+        user_otvet = input("ваше число" + ser + "?")
+        continue
+
+        
